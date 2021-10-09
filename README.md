@@ -2,7 +2,7 @@
 
 Coppermind is *a one-column minimal responsive Jekyll blog theme*.
 
-## Why another Jekyll theme?
+## Why Another Jekyll Theme?
 
 The modern web is bloated and disorganised. Pages load slowly and require large, resource-hungry web browsers to acess them. The machines and networks of years ago would be entirely adequate today if the programs they run were better optimised. This project seeks to provide a simple, low-dependency framework for creation of static sites.
 
@@ -13,7 +13,7 @@ This project:
 - Is built as a theme for [Jekyll](https://jekyllrb.com)
 - Was created as a fork of [Monophase](https://github.com/whk-io/monophase) with additional features, fixes, and customisations
 
-## Installation
+## Installation and Initial Setup
 
 ### Adding the gem
 
@@ -42,13 +42,19 @@ Or install it yourself as:
 gem install coppermind
 ```
 
-## Customisation
+### The navigation bar and homepage
 
-### Customising the navigation bar
+Before the site is fully functional, you will need to add an index.html file and navigation bar config files.
 
-By default Coppermind includes a navigation bar with three archive pages. This is not intended to be the final configuration for all users, and is highly configurable.
+```html
+<!-- index.html -->
 
-To customise the navigation bar you just need to specify titles and URLs in the file `_data/navigation.yml`. For example, the following will give you a navbar with an *about* page and three archive pages.
+---
+layout: home
+---
+```
+
+To set up the navigation bar you need to specify titles and URLs in the file `_data/navigation.yml`. For example, the following will give you a navbar with an *about* page and three archive pages.
 
 ```yml
 - title: About
@@ -59,7 +65,7 @@ To customise the navigation bar you just need to specify titles and URLs in the 
   url: /categories/
 ```
 
-These links correspond to markdown files in the baseurl:
+You will also need to add markdown files corresponding to these links in the site's root directory:
 
 ```md
 <!-- about.md -->
@@ -105,6 +111,8 @@ title: Years
 permalink: /years/
 ---
 ```
+
+## Customisation
 
 ### Config.yml options
 In addition to the standard Jekyll config.yml settings, Coppermind supports the following:
