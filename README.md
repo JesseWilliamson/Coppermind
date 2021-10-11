@@ -11,7 +11,7 @@ The modern web is bloated and disorganised. Pages load slowly and require large,
 This project:
 
 - Is built as a theme for [Jekyll](https://jekyllrb.com)
-- Was created as a fork of [Monophase](https://github.com/whk-io/monophase) with additional features, fixes, and customisations
+- Was built on the now abandoned [Monophase](https://github.com/whk-io/monophase), but adds several features, updates, and fixes.
 
 ## Installation and Initial Setup
 
