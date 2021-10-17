@@ -270,6 +270,7 @@ a.pagination-item:hover {
 }
 
 .pin{
+  width: 88px;
   padding-right: var(--spacer);
 }
 
@@ -285,11 +286,19 @@ a.pagination-item:hover {
 }
 
 @media screen and (min-width: $md-screen) {
+  // .footer{
+  //   padding-left: var(--spacer-2);
+  //   padding-right: var(--spacer-2);
+  // }
   .attribution {
     display: flex;
   }
   .pinlist{
-    display: flex;
+    display:flex;
+    // border:3px solid black;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
   }
   .attribution-column {
     width: 100%;
