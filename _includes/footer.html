@@ -1,18 +1,21 @@
 
 <footer class="footer">
 
-  <div class=pins>
-  <p>test</p>
+  <div class="pinlist">
+    <p>test</p>
+    <p>test2</p>
 
-  <div>
+    <a href="google.com">test</a>
+    <a href="google.com">test</a>
+
     {% for item in site.data.pins %}
-      <a href="{{ item.url }}">
-        {{ item.title }}
+      <a href="{{ item.url }}" class="pin">
+        <img src="/assets/pins/{{ item.image }}.gif">
       </a>
     {% endfor %}
+
   </div>
   <br>  
-  </div>
 
 
   <div class="attribution">

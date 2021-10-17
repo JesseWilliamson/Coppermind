@@ -269,6 +269,10 @@ a.pagination-item:hover {
   }
 }
 
+.pin{
+  padding-left: var(--spacer);
+  padding-left: var(--spacer);
+}
 
 .social-icons {
   list-style: none;
@@ -285,7 +289,7 @@ a.pagination-item:hover {
   .attribution {
     display: flex;
   }
-  .pins{
+  .pinlist{
     display: flex;
   }
   .attribution-column {
