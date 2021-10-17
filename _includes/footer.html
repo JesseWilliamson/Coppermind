@@ -1,5 +1,22 @@
+
 <footer class="footer">
-  <div class="footer-column">
+
+  <div class=pins>
+  <p>test</p>
+
+  <div>
+    {% for item in site.data.pins %}
+      <a href="{{ item.url }}">
+        {{ item.title }}
+      </a>
+    {% endfor %}
+  </div>
+  <br>  
+  </div>
+
+
+  <div class="attribution">
+  <div class="attribution-column">
     <p>
       <small>
         &copy;&nbsp;
@@ -24,7 +41,7 @@
     </p>
   </div>
   {% if site.data.social %}
-    <div class="footer-column">
+    <div class="attribution-column">
       <ul class="social-icons">
         {% for social in site.data.social %}
           <li class="social-icon-item">

@@ -269,6 +269,7 @@ a.pagination-item:hover {
   }
 }
 
+
 .social-icons {
   list-style: none;
   padding: 0;
@@ -281,10 +282,13 @@ a.pagination-item:hover {
 }
 
 @media screen and (min-width: $md-screen) {
-  .footer {
+  .attribution {
     display: flex;
   }
-  .footer-column {
+  .pins{
+    display: flex;
+  }
+  .attribution-column {
     width: 100%;
   }
   .social-icons {
