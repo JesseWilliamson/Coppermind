@@ -59,10 +59,16 @@ To set up the navigation bar you need to specify titles and URLs in the file `_d
 ```yml
 - title: About
   url: /about/
-- title: Archive
-  url: /archive/
+
+- title: Years
+  url: /years/
+
 - title: Categories
   url: /categories/
+
+- title: Tags
+  url: /tags/
+
 ```
 
 You will also need to add markdown files corresponding to these links in the site's root directory:
@@ -111,6 +117,44 @@ title: Years
 permalink: /years/
 ---
 ```
+
+### The footbar pins
+To include pins in the footer, you need to specify titles, image names, and URLs in the file `_data/pins.yml` as shown in the example below.
+
+```yml
+- title: Larbs
+  url: https://larbs.xyz/
+  image: larbs
+
+- title: XXIIVV
+  url: https://wiki.xxiivv.com/site/home.html
+  image: xxiivv
+
+- title: Luke Smith
+  url: https://lukesmith.xyz/index
+  image: luke
+
+- title: Hundred Rabbits
+  url: https://100r.co/site/home.html
+  image: hundredrabbits
+
+- title: Landchad
+  url: https://landchad.net/
+  image: landchad
+
+- title: Kitchen
+  url: https://grimgrains.com/site/home.html
+  image: kitchen
+```
+
+This configuration corresponds to the following fiiles:
+1. `assets/pins/larbs.gif`
+2. `assets/pins/xxiivv.gif`
+3. `assets/pins/luke.gif`
+4. `assets/pins/hundredrabbits.gif`
+5. `assets/pins/landchad.gif`
+6. `assets/pins/kitchen.gif`
+
 
 ## Customisation
 

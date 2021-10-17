@@ -269,6 +269,11 @@ a.pagination-item:hover {
   }
 }
 
+.pin{
+  width: 88px;
+  padding-right: var(--spacer);
+}
+
 .social-icons {
   list-style: none;
   padding: 0;
@@ -281,10 +286,21 @@ a.pagination-item:hover {
 }
 
 @media screen and (min-width: $md-screen) {
-  .footer {
+  // .footer{
+  //   padding-left: var(--spacer-2);
+  //   padding-right: var(--spacer-2);
+  // }
+  .attribution {
     display: flex;
   }
-  .footer-column {
+  .pinlist{
+    display:flex;
+    // border:3px solid black;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .attribution-column {
     width: 100%;
   }
   .social-icons {
