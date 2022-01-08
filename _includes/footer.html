@@ -1,19 +1,19 @@
 
 <footer class="footer">
 
-  <div class="pinlist">
-    {% if site.data.pins %}
-      {% for item in site.data.pins %}
-        <a href="{{ item.url }}" class="pin">
-          <img src="/assets/pins/{{ item.image }}.gif">
-        </a>
-      {% endfor %}
-    {% endif %}
+{% if site.data.pins %}
+<h5>Recommended Websites</h5>
+<div class="pinlist">
+  {% for item in site.data.pins %}
+  <div>
+    <a href="{{ item.url }}">
+      <img src="/assets/pins/{{ item.image }}.gif">
+    </a>
   </div>
-  <br>  
-
-  <!-- <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. </p> -->
-
+  {% endfor %}
+</div>
+{% endif %}
+  <br> 
 
   <div class="attribution">
 
